@@ -1,5 +1,5 @@
 # Learning-Flux
-Exact replica from johnsusek's github for myStudy
+Exact replica from johnsusek's fluxus-example-app for Study.
 
 ## Installation 
 Please install Dependencies 
