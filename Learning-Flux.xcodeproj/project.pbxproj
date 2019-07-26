@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E5FA73622EAC73B009F0427 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA73522EAC73B009F0427 /* AppDelegate.swift */; };
+		7E5FA73822EAC73B009F0427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA73722EAC73B009F0427 /* SceneDelegate.swift */; };
+		7E5FA73A22EAC73B009F0427 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA73922EAC73B009F0427 /* ContentView.swift */; };
+		7E5FA73C22EAC73C009F0427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5FA73B22EAC73C009F0427 /* Assets.xcassets */; };
+		7E5FA73F22EAC73C009F0427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5FA73E22EAC73C009F0427 /* Preview Assets.xcassets */; };
+		7E5FA74222EAC73C009F0427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5FA74022EAC73C009F0427 /* LaunchScreen.storyboard */; };
+		7E5FA74D22EAC73C009F0427 /* Learning_FluxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA74C22EAC73C009F0427 /* Learning_FluxTests.swift */; };
+		7E5FA75822EAC73C009F0427 /* Learning_FluxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA75722EAC73C009F0427 /* Learning_FluxUITests.swift */; };
+		7E5FA76722EAC74C009F0427 /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5FA76622EAC74C009F0427 /* SwiftUIFlux */; };
+		7E5FA76A22EAC82E009F0427 /* Fluxus in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5FA76922EAC82E009F0427 /* Fluxus */; };
+		7E5FA76C22EAC894009F0427 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA76B22EAC894009F0427 /* State.swift */; };
+		7E5FA76E22EAC915009F0427 /* Mutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA76D22EAC915009F0427 /* Mutations.swift */; };
+		7E5FA77022EAC956009F0427 /* Dispatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA76F22EAC956009F0427 /* Dispatchers.swift */; };
+		7E5FA77222EACB0F009F0427 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA77122EACB0F009F0427 /* Actions.swift */; };
+		7E5FA77422EACBD8009F0427 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA77322EACBD8009F0427 /* Store.swift */; };
+		7E5FA77622EACDB6009F0427 /* Committers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FA77522EACDB5009F0427 /* Committers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E5FA74922EAC73C009F0427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E5FA72A22EAC73B009F0427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E5FA73122EAC73B009F0427;
+			remoteInfo = "Learning-Flux";
+		};
+		7E5FA75422EAC73C009F0427 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E5FA72A22EAC73B009F0427 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E5FA73122EAC73B009F0427;
+			remoteInfo = "Learning-Flux";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E5FA73222EAC73B009F0427 /* Learning-Flux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning-Flux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5FA73522EAC73B009F0427 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E5FA73722EAC73B009F0427 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E5FA73922EAC73B009F0427 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E5FA73B22EAC73C009F0427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E5FA73E22EAC73C009F0427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E5FA74122EAC73C009F0427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E5FA74322EAC73C009F0427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5FA74822EAC73C009F0427 /* Learning-FluxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-FluxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5FA74C22EAC73C009F0427 /* Learning_FluxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_FluxTests.swift; sourceTree = "<group>"; };
+		7E5FA74E22EAC73C009F0427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5FA75322EAC73C009F0427 /* Learning-FluxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-FluxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5FA75722EAC73C009F0427 /* Learning_FluxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_FluxUITests.swift; sourceTree = "<group>"; };
+		7E5FA75922EAC73C009F0427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5FA76B22EAC894009F0427 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7E5FA76D22EAC915009F0427 /* Mutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutations.swift; sourceTree = "<group>"; };
+		7E5FA76F22EAC956009F0427 /* Dispatchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatchers.swift; sourceTree = "<group>"; };
+		7E5FA77122EACB0F009F0427 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		7E5FA77322EACBD8009F0427 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7E5FA77522EACDB5009F0427 /* Committers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Committers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E5FA72F22EAC73B009F0427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5FA76722EAC74C009F0427 /* SwiftUIFlux in Frameworks */,
+				7E5FA76A22EAC82E009F0427 /* Fluxus in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA74522EAC73C009F0427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA75022EAC73C009F0427 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E5FA72922EAC73B009F0427 = {
+			isa = PBXGroup;
+			children = (
+				7E5FA73422EAC73B009F0427 /* Learning-Flux */,
+				7E5FA74B22EAC73C009F0427 /* Learning-FluxTests */,
+				7E5FA75622EAC73C009F0427 /* Learning-FluxUITests */,
+				7E5FA73322EAC73B009F0427 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E5FA73322EAC73B009F0427 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FA73222EAC73B009F0427 /* Learning-Flux.app */,
+				7E5FA74822EAC73C009F0427 /* Learning-FluxTests.xctest */,
+				7E5FA75322EAC73C009F0427 /* Learning-FluxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E5FA73422EAC73B009F0427 /* Learning-Flux */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FA73522EAC73B009F0427 /* AppDelegate.swift */,
+				7E5FA73722EAC73B009F0427 /* SceneDelegate.swift */,
+				7E5FA73922EAC73B009F0427 /* ContentView.swift */,
+				7E5FA76B22EAC894009F0427 /* State.swift */,
+				7E5FA77122EACB0F009F0427 /* Actions.swift */,
+				7E5FA77522EACDB5009F0427 /* Committers.swift */,
+				7E5FA76D22EAC915009F0427 /* Mutations.swift */,
+				7E5FA76F22EAC956009F0427 /* Dispatchers.swift */,
+				7E5FA77322EACBD8009F0427 /* Store.swift */,
+				7E5FA73B22EAC73C009F0427 /* Assets.xcassets */,
+				7E5FA74022EAC73C009F0427 /* LaunchScreen.storyboard */,
+				7E5FA74322EAC73C009F0427 /* Info.plist */,
+				7E5FA73D22EAC73C009F0427 /* Preview Content */,
+			);
+			path = "Learning-Flux";
+			sourceTree = "<group>";
+		};
+		7E5FA73D22EAC73C009F0427 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FA73E22EAC73C009F0427 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E5FA74B22EAC73C009F0427 /* Learning-FluxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FA74C22EAC73C009F0427 /* Learning_FluxTests.swift */,
+				7E5FA74E22EAC73C009F0427 /* Info.plist */,
+			);
+			path = "Learning-FluxTests";
+			sourceTree = "<group>";
+		};
+		7E5FA75622EAC73C009F0427 /* Learning-FluxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E5FA75722EAC73C009F0427 /* Learning_FluxUITests.swift */,
+				7E5FA75922EAC73C009F0427 /* Info.plist */,
+			);
+			path = "Learning-FluxUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E5FA73122EAC73B009F0427 /* Learning-Flux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5FA75C22EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-Flux" */;
+			buildPhases = (
+				7E5FA72E22EAC73B009F0427 /* Sources */,
+				7E5FA72F22EAC73B009F0427 /* Frameworks */,
+				7E5FA73022EAC73B009F0427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learning-Flux";
+			packageProductDependencies = (
+				7E5FA76622EAC74C009F0427 /* SwiftUIFlux */,
+				7E5FA76922EAC82E009F0427 /* Fluxus */,
+			);
+			productName = "Learning-Flux";
+			productReference = 7E5FA73222EAC73B009F0427 /* Learning-Flux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E5FA74722EAC73C009F0427 /* Learning-FluxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5FA75F22EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-FluxTests" */;
+			buildPhases = (
+				7E5FA74422EAC73C009F0427 /* Sources */,
+				7E5FA74522EAC73C009F0427 /* Frameworks */,
+				7E5FA74622EAC73C009F0427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E5FA74A22EAC73C009F0427 /* PBXTargetDependency */,
+			);
+			name = "Learning-FluxTests";
+			productName = "Learning-FluxTests";
+			productReference = 7E5FA74822EAC73C009F0427 /* Learning-FluxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E5FA75222EAC73C009F0427 /* Learning-FluxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E5FA76222EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-FluxUITests" */;
+			buildPhases = (
+				7E5FA74F22EAC73C009F0427 /* Sources */,
+				7E5FA75022EAC73C009F0427 /* Frameworks */,
+				7E5FA75122EAC73C009F0427 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E5FA75522EAC73C009F0427 /* PBXTargetDependency */,
+			);
+			name = "Learning-FluxUITests";
+			productName = "Learning-FluxUITests";
+			productReference = 7E5FA75322EAC73C009F0427 /* Learning-FluxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E5FA72A22EAC73B009F0427 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Greenleaf Software";
+				TargetAttributes = {
+					7E5FA73122EAC73B009F0427 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					7E5FA74722EAC73C009F0427 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7E5FA73122EAC73B009F0427;
+					};
+					7E5FA75222EAC73C009F0427 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7E5FA73122EAC73B009F0427;
+					};
+				};
+			};
+			buildConfigurationList = 7E5FA72D22EAC73B009F0427 /* Build configuration list for PBXProject "Learning-Flux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E5FA72922EAC73B009F0427;
+			packageReferences = (
+				7E5FA76522EAC74C009F0427 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+				7E5FA76822EAC82E009F0427 /* XCRemoteSwiftPackageReference "fluxus" */,
+			);
+			productRefGroup = 7E5FA73322EAC73B009F0427 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E5FA73122EAC73B009F0427 /* Learning-Flux */,
+				7E5FA74722EAC73C009F0427 /* Learning-FluxTests */,
+				7E5FA75222EAC73C009F0427 /* Learning-FluxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E5FA73022EAC73B009F0427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5FA74222EAC73C009F0427 /* LaunchScreen.storyboard in Resources */,
+				7E5FA73F22EAC73C009F0427 /* Preview Assets.xcassets in Resources */,
+				7E5FA73C22EAC73C009F0427 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA74622EAC73C009F0427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA75122EAC73C009F0427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E5FA72E22EAC73B009F0427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5FA73622EAC73B009F0427 /* AppDelegate.swift in Sources */,
+				7E5FA77622EACDB6009F0427 /* Committers.swift in Sources */,
+				7E5FA73822EAC73B009F0427 /* SceneDelegate.swift in Sources */,
+				7E5FA73A22EAC73B009F0427 /* ContentView.swift in Sources */,
+				7E5FA77422EACBD8009F0427 /* Store.swift in Sources */,
+				7E5FA76E22EAC915009F0427 /* Mutations.swift in Sources */,
+				7E5FA77022EAC956009F0427 /* Dispatchers.swift in Sources */,
+				7E5FA76C22EAC894009F0427 /* State.swift in Sources */,
+				7E5FA77222EACB0F009F0427 /* Actions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA74422EAC73C009F0427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5FA74D22EAC73C009F0427 /* Learning_FluxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5FA74F22EAC73C009F0427 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5FA75822EAC73C009F0427 /* Learning_FluxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E5FA74A22EAC73C009F0427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E5FA73122EAC73B009F0427 /* Learning-Flux */;
+			targetProxy = 7E5FA74922EAC73C009F0427 /* PBXContainerItemProxy */;
+		};
+		7E5FA75522EAC73C009F0427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E5FA73122EAC73B009F0427 /* Learning-Flux */;
+			targetProxy = 7E5FA75422EAC73C009F0427 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E5FA74022EAC73C009F0427 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E5FA74122EAC73C009F0427 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E5FA75A22EAC73C009F0427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E5FA75B22EAC73C009F0427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E5FA75D22EAC73C009F0427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Learning-Flux/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Learning-Flux/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-Flux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E5FA75E22EAC73C009F0427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "Learning-Flux/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Learning-Flux/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-Flux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E5FA76022EAC73C009F0427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Learning-FluxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-FluxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning-Flux.app/Learning-Flux";
+			};
+			name = Debug;
+		};
+		7E5FA76122EAC73C009F0427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Learning-FluxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-FluxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning-Flux.app/Learning-Flux";
+			};
+			name = Release;
+		};
+		7E5FA76322EAC73C009F0427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Learning-FluxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-FluxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Learning-Flux";
+			};
+			name = Debug;
+		};
+		7E5FA76422EAC73C009F0427 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Learning-FluxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.grenleaf.com.Learning-FluxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Learning-Flux";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E5FA72D22EAC73B009F0427 /* Build configuration list for PBXProject "Learning-Flux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5FA75A22EAC73C009F0427 /* Debug */,
+				7E5FA75B22EAC73C009F0427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5FA75C22EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-Flux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5FA75D22EAC73C009F0427 /* Debug */,
+				7E5FA75E22EAC73C009F0427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5FA75F22EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-FluxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5FA76022EAC73C009F0427 /* Debug */,
+				7E5FA76122EAC73C009F0427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E5FA76222EAC73C009F0427 /* Build configuration list for PBXNativeTarget "Learning-FluxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5FA76322EAC73C009F0427 /* Debug */,
+				7E5FA76422EAC73C009F0427 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E5FA76522EAC74C009F0427 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.2;
+			};
+		};
+		7E5FA76822EAC82E009F0427 /* XCRemoteSwiftPackageReference "fluxus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsusek/fluxus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E5FA76622EAC74C009F0427 /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E5FA76522EAC74C009F0427 /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
+		};
+		7E5FA76922EAC82E009F0427 /* Fluxus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E5FA76822EAC82E009F0427 /* XCRemoteSwiftPackageReference "fluxus" */;
+			productName = Fluxus;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E5FA72A22EAC73B009F0427 /* Project object */;
+}
