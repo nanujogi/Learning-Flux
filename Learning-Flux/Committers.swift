@@ -12,7 +12,6 @@ struct CounterCommitter: Committer {
     case .SetMyBool(let value):
       state.myBoolValue = value
     }
-
     return state
   }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var store: RootStore
+    
     var body: some View {
         NavigationView {
             Form {
@@ -54,16 +55,18 @@ struct ContentView: View {
             } .navigationBarTitle(Text("Fluxus Example")) // end of Form
         }
     }
+    
+    // Use computed properties to get/set state via a binding
+      var myToggleBinding = Binding<Bool> (
+        getValue: {
+          rootStore.state.counter.myBoolValue
+      },
+        setValue: { value in
+          rootStore.commit(CounterMutation.SetMyBool(value))
+      })
 }
 
-// Use computed properties to get/set state via a binding
-  var myToggleBinding = Binding<Bool> (
-    getValue: {
-      rootStore.state.counter.myBoolValue
-  },
-    setValue: { value in
-      rootStore.commit(CounterMutation.SetMyBool(value))
-  })
+
 
 
 
