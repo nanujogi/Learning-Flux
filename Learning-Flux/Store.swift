@@ -13,12 +13,14 @@ import Fluxus
 
 let rootStore = RootStore()
 
-final class RootStore: BindableObject {
+final class RootStore: ObservableObject {
+    
     var willChange = PassthroughSubject<RootStore, Never>()
     
-    var state = RootState() {
+    @Published var state = RootState() {
         didSet {
-            willChange.send(self)
+            objectWillChange.send()
+            // willChange.send(self)
         }
     }
     
